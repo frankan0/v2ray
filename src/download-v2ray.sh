@@ -17,7 +17,7 @@ _get_latest_version() {
 _download_v2ray_file() {
 	[[ ! $v2ray_latest_ver ]] && _get_latest_version
 	v2ray_tmp_file="/tmp/v2ray.zip"
-	v2ray_download_link="https://static.cowtransfer.com/anonymous/d0c65de5-b18a-4066-93af-9457e4e67b67/v2ray-linux-64.zip?onett=49abd0b9dce28ff27be5e13f14301e8e&attname=v2ray-linux-64.zip"
+	v2ray_download_link="https://f002.backblazeb2.com/file/cdn00002/v2ray-linux-64.zip"
 
 	if ! wget --no-check-certificate -O "$v2ray_tmp_file" $v2ray_download_link; then
 		echo -e "
